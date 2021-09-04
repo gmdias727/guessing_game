@@ -6,7 +6,7 @@ use rand::Rng;
 fn main() {
     println!("Adivinhe o numero!");
     
-    let secret_number = rand::thread_rng().gen_range(1..101);
+    let magic_number = rand::thread_rng().gen_range(1..101);
 
     // println!("O numero secreto é: {}", secret_number);
 
@@ -31,7 +31,7 @@ fn main() {
         
         println!("Você chutou o numero: {}", guess);
         
-        match guess.cmp(&secret_number) {
+        match guess.cmp(&=magic_number) {
             Ordering::Less => println!("Está muito abaixo!"),
             Ordering::Greater => println!("Está muito acima!"),
             Ordering::Equal => {
