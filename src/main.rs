@@ -2,6 +2,7 @@ use std::io;
 use std::cmp::Ordering;
 use rand::Rng;
 
+// alguma coisa
 
 fn main() {
     println!("Adivinhe o numero!");
